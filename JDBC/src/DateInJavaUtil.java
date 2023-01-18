@@ -40,6 +40,19 @@ public class DateInJavaUtil {
 		System.out.println("Java Util Date ::"+udate1);
 		System.out.println("Java Sql Date ::"+sqlDate);
 		
+		System.out.println("*********************");
+		
+		// if the input is directly in dd-MM-yyyy
+		//then we can skip step 1-3
+		
+		System.out.println("Enter Date in yyyy-MM-dd");
+		Scanner scan = new Scanner(System.in);
+		String standardInput = scan.next();
+		
+		java.sql.Date SqlstandardInput = java.sql.Date.valueOf(standardInput);
+		System.out.println("StandardInput Date::"+standardInput);
+		System.out.println("SqlstandardInput Date::"+SqlstandardInput);
+	
 		sc.close();
 		
 
