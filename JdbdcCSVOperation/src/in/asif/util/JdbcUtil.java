@@ -22,7 +22,7 @@ public class JdbcUtil {
 	public static Connection getJdbcConnection() throws SQLException, IOException 
 	{
 		// Take the data from properties file
-				FileInputStream fis = new FileInputStream("E:\\jdbc(repository)\\JdbdcExcelOperation\\application.properties");
+				FileInputStream fis = new FileInputStream("E:\\javap\\JdbdcCSVOperation\\application.properties");
 				Properties properties = new Properties();
 				properties.load(fis);
 
